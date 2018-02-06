@@ -28,9 +28,9 @@ You can also preview view a demos of each endpoint here http://jacobsthal-lucas.
 
 //Calculate Jacobsthal number https://en.wikipedia.org/wiki/Jacobsthal_number at n rewritten for javascript
 
-- Original sum:  `L_n = 2^n + (-1)^n. \,`
+- Original calculation:  `L_n = 2^n + (-1)^n. \,`
 
-- Calculation: `return Math.pow(2, n) + Math.pow(-1, n);`
+- Javascript calculation: `return Math.pow(2, n) + Math.pow(-1, n);`
 - Series calculation function: `return Array.from(Array(parseInt(req.params.calculateSeries)).keys())
 		.map((item, index) => {
 			return returnJacobsthal(index);
