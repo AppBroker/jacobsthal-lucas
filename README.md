@@ -27,7 +27,7 @@ Based on the methods here https://en.wikipedia.org/wiki/Jacobsthal_number, I hav
 You can also preview view a demos of each endpoint here http://jacobsthal-lucas.mybluemix.net/api/jacobsthal/4 and the series based calculation here http://jacobsthal-lucas.mybluemix.net/api/jacobsthal/4/12
 
 //Calculate Jacobsthal number at n
-function returnJacobsthal(n){
+- function returnJacobsthal(n){
 	return Math.pow(2, n) + Math.pow(-1, n);
 }
 
