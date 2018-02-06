@@ -28,6 +28,16 @@ You can also preview view a demos of each endpoint here http://jacobsthal-lucas.
 
 //Calculate Jacobsthal number https://en.wikipedia.org/wiki/Jacobsthal_number at n rewritten for javascript
 - Calculation: `return Math.pow(2, n) + Math.pow(-1, n);`
+- Series calculation function: `return Array.from(Array(parseInt(req.params.calculateSeries)).keys())
+		.map((item, index) => {
+			return returnJacobsthal(index);
+		})
+		.filter((item) => {
+			return !(item % 5 === 0) ;
+		})
+		.reduce((total, num) => {
+    		return total + num;
+		});`
 
 
 See server.js for the array series calculation.
