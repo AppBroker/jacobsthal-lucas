@@ -44,6 +44,6 @@ You can also preview view a demos of each endpoint here http://jacobsthal-lucas.
 		});`
 
 
-See server.js for the array series calculation.
+See server.js for the array series calculation in action.
 Cheers
 Ryan
