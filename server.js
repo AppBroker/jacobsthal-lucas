@@ -2,10 +2,10 @@
 // =============================================================================
 
 // call the packages we need
-var express    = require('express');
-var bodyParser = require('body-parser');
-var app        = express();
-var morgan     = require('morgan');
+const express    = require('express');
+const bodyParser = require('body-parser');
+const app        = express();
+const morgan     = require('morgan');
 
 // configure app
 app.use(morgan('dev')); // log requests to the console
@@ -14,13 +14,13 @@ app.use(morgan('dev')); // log requests to the console
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var port     = process.env.PORT || 8080; // set our port
+const port     = process.env.PORT || 8080; // set our port
 
 // ROUTES FOR OUR API
 // =============================================================================
 
 // create our router
-var router = express.Router();
+const router = express.Router();
 
 // middleware to use for all requests
 router.use((req, res, next) => {
@@ -36,11 +36,11 @@ router.get('/', (req, res) => {
 
 
 //Method to return jacobsthal
-const returnJacobsthal(n) => {
+const returnJacobsthal = (n) => {
 	return Math.pow(2, n) + Math.pow(-1, n);
 }
 
-const getSum(total, num) => {
+const getSum = (total, num) => {
     return total + num;
 }
 // returns value based on /jacobsthal at nth
@@ -53,9 +53,9 @@ router.route('/jacobsthal/:nth')
 
 // Calculates the value of the series of jacobsthal numbers up to an index but omits values divisible by 5 from the calculation
 // ----------------------------------------------------
-router.route('/jacobsthal/:nth/:calculateSeries')
+router.route('/addjacobsthalseries/:nth')
 	.get((req, res) => {
-		var sum = Array.from(Array(parseInt(req.params.calculateSeries)).keys())
+		let sum = Array.from(Array(parseInt(req.params.nth)).keys())
 		.map((item, index) => {
 			return returnJacobsthal(index);
 		})

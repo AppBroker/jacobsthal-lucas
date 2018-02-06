@@ -19,13 +19,13 @@ Displaying 3 requirements
 ## Endpoints
 - Based on calculation:  `L_n = 2^n + (-1)^n. \,`
 http://localhost:8080/api/jacobsthal/4 - returns the Jacobsthal-Lucas numbers at nth value where 4 is n.
-- http://localhost:8080/api/jacobsthal/4/12 - returns the calculated series/array of jacobsthal numbers up to an index ( omitting values divisible by 5 from the calculation) where 12 is the index limit up to the series that should be calculated
+- http://localhost:8080/api/addjacobsthalseries/12 - returns the calculated series/array of jacobsthal numbers up to an index ( omitting values divisible by 5 from the calculation) where 12 is the index limit up to the series that should be calculated
 
 ## Calculations
 Based on the methods here https://en.wikipedia.org/wiki/Jacobsthal_number, I have rewritten the javascript method to match as follows
 
 ## Demo
-You can also preview view a demos of each endpoint here http://jacobsthal-lucas.mybluemix.net/api/jacobsthal/4 and the series based calculation here http://jacobsthal-lucas.mybluemix.net/api/jacobsthal/4/12
+You can also preview view a demos of each endpoint here http://jacobsthal-lucas.mybluemix.net/api/jacobsthal/4 and the series based calculation here http://jacobsthal-lucas.mybluemix.net/api/addjacobsthalseries/12
 
 //Calculate Jacobsthal number https://en.wikipedia.org/wiki/Jacobsthal_number at n rewritten for javascript
 
