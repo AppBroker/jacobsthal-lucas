@@ -26,10 +26,9 @@ Based on the methods here https://en.wikipedia.org/wiki/Jacobsthal_number, I hav
 ## Demo
 You can also preview view a demos of each endpoint here http://jacobsthal-lucas.mybluemix.net/api/jacobsthal/4 and the series based calculation here http://jacobsthal-lucas.mybluemix.net/api/jacobsthal/4/12
 
-//Calculate Jacobsthal number at n
-- function returnJacobsthal(n){
-	return Math.pow(2, n) + Math.pow(-1, n);
-}
+//Calculate Jacobsthal number https://en.wikipedia.org/wiki/Jacobsthal_number at n rewritten for javascript
+- return Math.pow(2, n) + Math.pow(-1, n);
+
 
 See server.js for the array series calculation.
 Cheers
