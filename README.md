@@ -1,4 +1,4 @@
-# Schroders Ryan McLaughlin (Jacobsthal-Lucas numbers)
+# Jacobsthal-Lucas numbers
 
 Displaying 3 requirements
 - Exposing endpoints via an api
