@@ -2,7 +2,7 @@
 
 Displaying 3 requirements
 - Exposing endpoints via an api
-- Functional Reactive Programming in Javascript
+- Map Filter Reduce Javascript
 - Create an endpoint that returns the Jacobsthal-Lucas number at an nth index
 - Calculate the series/array of jacobsthal numbers up to an index ( omitting values divisible by 5 from the calculation)
 
